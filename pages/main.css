@@ -19,6 +19,7 @@
   width: 100%;
   padding: 0 50px;
   margin: 30px auto 90px;
+  box-sizing: border-box;
 }
 
 .header__nav {
@@ -84,4 +85,42 @@
   font-size: 10px;
   line-height: 14px;
   letter-spacing: 1.5px;
+}
+
+/* ABOUT */
+.about {
+  max-width: 1084px;
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.about__title {
+  max-width: 690px;
+  font-size: 54px;
+  line-height: 58px;
+  margin: 0 0 40px;
+  font-family: "InterBlack";
+}
+
+.about__text {
+  max-width: 690px;
+  margin: 0 0 33px;
+}
+
+.about__statistics {
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+}
+
+.about__item {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "InterBold";
+}
+
+.about__span {
+  font-family: "InterRegular";
 }
