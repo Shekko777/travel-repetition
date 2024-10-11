@@ -1,0 +1,9 @@
+@import url(../vender/fonts.css);
+
+.body {
+  font-family: 'InterRegular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 163%;
+  color: #fff;
+}
