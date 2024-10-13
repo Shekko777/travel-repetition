@@ -154,7 +154,7 @@
 
 /* REVIEW */
 .review {
-  max-width: 984px;
+  max-width: 1084px;
   width: 100%;
   margin: 0 auto 92px;
   padding: 0 50px;
@@ -162,6 +162,9 @@
 }
 
 .review__list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -169,7 +172,9 @@
 
 .review__item {
   line-height: 0;
-
+  display: grid;
+  grid-template-columns: repeat(2, minmax(235px, 484px));
+  gap: 48px 40px;
 }
 
 .review__title {
@@ -182,14 +187,8 @@
 
 }
 
-.review__text {
-  margin: 0;
-  font-size: 18px;
-  max-width: 484px;
-  line-height: 163%;
-}
-
 .review__link {
+  position: relative;
   text-decoration: none;
   color: #fff;
 
@@ -197,6 +196,42 @@
   line-height: 22px;
   border-bottom: 1px solid #fff;
   padding-bottom: 2px;
+
+  align-self: end;
+  justify-self: start;
+}
+
+.review__image {
+  max-width: 460px;
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  object-position: center;
+}
+
+.review__link::before {
+  position: absolute;
+  content: 'URL';
+  color: #AAA;
+  font-size: 12px;
+  line-height: 12px;
+  top: -24px;
+  left: 0;
+}
+
+.review__description {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.review__text {
+  margin: 0;
+  font-size: 18px;
+  max-width: 484px;
+  width: 100%;
+  line-height: 163%;
 }
 
 /* FOOTER */
