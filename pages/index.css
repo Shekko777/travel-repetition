@@ -38,15 +38,13 @@
   gap: 20px;
 }
 
-.header__button {
-  background-color: transparent;
-  padding: 0 0 ;
+.header__link {
+  padding: 0;
   margin: 0;
-  border: none;
   color: #fff;
   font-size: 24px;
   line-height: 28px;
-  cursor: pointer;
+  text-decoration: none;  
 }
 
 .header__button_active {
